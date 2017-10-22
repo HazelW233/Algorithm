@@ -1,2 +1,5 @@
 # Algorithm
-这个文件包含了一些算法
+这个文件包含了一些常用算法<br>
+<br>
+>Sort
+>>QuickSort
