@@ -6,6 +6,6 @@
 <br>
 
 >Tree
->>Huffman Tree
->>Binary Search Tree
+>>Huffman Tree<br>
+>>Binary Search Tree<br>
 >>sss
