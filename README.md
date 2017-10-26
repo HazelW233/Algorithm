@@ -3,3 +3,7 @@
 <br>
 >Sort
 >>QuickSort
+
+>Tree
+>>Huffman Tree
+>>Binary Search Tree
