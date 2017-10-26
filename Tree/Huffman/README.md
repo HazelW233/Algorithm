@@ -1,6 +1,6 @@
 # Huffman Coding
 
-&emsp; Huffman编码是一种可变长的前缀编码，于1992年由Huffman提出。其根据字符出现的频率来提供对字符的唯一编码，同时保证了可变编码的平均编码最短，又称为最佳编码。
+&emsp;&emsp; Huffman编码是一种可变长的前缀编码，于1992年由Huffman提出。其根据字符出现的频率来提供对字符的唯一编码，同时保证了可变编码的平均编码最短，又称为最佳编码。
 
 ## 原理
 &emsp;&emsp; Huffman编码的构建需要借助于Huffman树。<br>
@@ -14,3 +14,4 @@
 4. 根据每个字符的Humman code，把文件转换成Huffman编码形式，写入新的文件。<br>
 
 ## 解码
+&emsp;&emsp; 解码即根据编码得到的Huffman树，然后输入相应的Huffman编码文件进行解码。
