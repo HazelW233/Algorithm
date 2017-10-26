@@ -10,10 +10,10 @@ Huffman树是一种二叉树。从二叉树的根节点走起，走到一个叶�
 
 过程
 ----
-  1、读入一个文件，统计文件中字符出现的频率，构成一个int类型的数组asc，作为weights。对于weight>0的字符(n个)生成n个Huffman节点，同时把这些节点按weight进行排序，按非递增顺序放入trees数组。
-  2、根据这n个节点的weight构造Huffman树。从trees中选取两个weight最小的节点，构造一个新的节点，其weight为这两个结点之和，其lchild和rchild分别为这两个节点，同时把这两个节点的parent设为这个节点。把这两个节点从trees中删除，同时把新节点插入trees，排序。然后再从trees中选取两个weight最小的节点，重复上述操作，直到生成完n-1个新节点。trees[0]即为Huffman树的根节点。
-  3、根据生成的Huffman树，得到各个字符的Huffman编码，放入codes数组。从根节点出发，递归到每一个根结点，到lchild则temp加上'0'，到rchild则temp加上'1'，到达根节点则把temp复制到相应的codes[i]。
-  4、根据每个字符的Humman code，把文件转换成Huffman编码形式，写入新的文件。
+    1、读入一个文件，统计文件中字符出现的频率，构成一个int类型的数组asc，作为weights。对于weight>0的字符(n个)生成n个Huffman节点，同时把这些节点按weight进行排序，按非递增顺序放入trees数组。
+    2、根据这n个节点的weight构造Huffman树。从trees中选取两个weight最小的节点，构造一个新的节点，其weight为这两个结点之和，其lchild和rchild分别为这两个节点，同时把这两个节点的parent设为这个节点。把这两个节点从trees中删除，同时把新节点插入trees，排序。然后再从trees中选取两个weight最小的节点，重复上述操作，直到生成完n-1个新节点。trees[0]即为Huffman树的根节点。
+    3、根据生成的Huffman树，得到各个字符的Huffman编码，放入codes数组。从根节点出发，递归到每一个根结点，到lchild则temp加上'0'，到rchild则temp加上'1'，到达根节点则把temp复制到相应的codes[i]。
+    4、根据每个字符的Humman code，把文件转换成Huffman编码形式，写入新的文件。
 <br>
 
 解码
