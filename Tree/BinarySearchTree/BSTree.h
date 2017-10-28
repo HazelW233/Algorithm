@@ -2,6 +2,7 @@
 此文件定义了二叉查找树节点BSTNode，
 二叉查找树BSTree类。
 BSTree类中有public方法如下：
+BSTree();
 ~BSTree();
 void makeEmpty();
 BSTNode* find(ElementType e);
