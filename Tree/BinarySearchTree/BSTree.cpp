@@ -36,6 +36,7 @@ BSTNode* BSTree::find(ElementType e){
         }else if(e>node->element){
             node=node->rchild;
         }else{
+            //e==node->element, 找到该节点
             break;
         }
     }
@@ -98,21 +99,23 @@ void BSTree::insert(ElementType e){
             if(node->lchild!=NULL){
                 node=node->lchild;
             }else{
+                //插入节点
                 BSTNode* new_node = new BSTNode;
                 new_node->element = e;
                 new_node->lchild = new_node->rchild=NULL;
                 node->lchild = new_node;
-                break;
+                return;
             }
         }else if(e>node->element){
             if(node->rchild!=NULL){
                 node=node->rchild;
             }else{
+                //插入节点
                 BSTNode* new_node = new BSTNode;
                 new_node->element = e;
                 new_node->lchild = new_node->rchild = NULL;
                 node->rchild = new_node;
-                break;
+                return;
             }
         }else{
             //树中已存在element为e的节点，直接返回
