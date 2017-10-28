@@ -4,7 +4,6 @@
 BSTree类中有public方法如下：
 BSTree();
 ~BSTree();
-void makeEmpty();
 BSTNode* find(ElementType e);
 BSTNode* findMin();
 BSTNode* findMax();
