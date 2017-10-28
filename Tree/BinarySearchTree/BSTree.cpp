@@ -128,6 +128,7 @@ void BSTree::insert(ElementType e){
 void BSTree::remove(ElementType e){
     BSTNode* node = root;
     BSTNode* parent = NULL;
+    //找到该节点
     while(true){
         if(e<node->element){
             if(node->lchild!=NULL){
@@ -151,6 +152,7 @@ void BSTree::remove(ElementType e){
 
     //经过此过程后，node最多有一个子孩子
     if(node->lchild!=NULL && node->rchild!=NULL){
+        //如果该节点有lchild和rchild，使该节点的element等于该节点rchild的最小节点的element，然后删除那个最小节点
         BSTNode* temp_node = findMin(node->rchild);
         ElementType temp = temp_node->element;
         node->element = temp;
@@ -161,7 +163,8 @@ void BSTree::remove(ElementType e){
             node = node->lchild;
         }
     }
-
+    
+    //删除节点node
     if(node->lchild!=NULL){
         if(parent->lchild==node){
             parent->lchild = node->lchild;
