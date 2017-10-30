@@ -21,7 +21,6 @@ int main(){
     a.insert(8);
     a.insert(9);
     a.travel();
-    std::cout<<AVLHeight(a.root);
 
     return 0;
 }
