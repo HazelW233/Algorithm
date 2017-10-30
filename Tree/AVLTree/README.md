@@ -10,4 +10,7 @@
 - singleRotateLeft();
 - singleRotateRight();
 - doubleRotateLeft();
--doubleRotateRight();
+- doubleRotateRight();
+
+![image](Algorithm/Tree/AVLTree/single.png)
+![image](Algorithm/Tree/AVLTree/double.png )
