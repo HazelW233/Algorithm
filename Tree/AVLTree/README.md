@@ -12,5 +12,6 @@
 - AVLNode* doubleRotateLeft(AVLNode* T);
 - AVLNode* doubleRotateRight(AVLNode* T);
 
-![single](https://github.com/HazelW233/Algorithm/Tree/AVLTree/single.png)
-![double](https://github.com/HazwlW233/Algorithm/Tree/AVLTree/double.png )
+![single](single.png)
+<br>
+![double](double.png )
