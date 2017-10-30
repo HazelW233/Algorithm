@@ -1,7 +1,12 @@
 /*
  此文件定义了AVL结点
  AVL树高度获得函数 int AVLHeight(AVLNode* T);
- AVLTree类中包含
+ AVLTree类中包含public方法如下：
+ AVLTree();
+ ~AVLTree();
+ void travel();
+ void insert(ElementType e);
+ void remove(ElementType e);
  */
 
 #ifndef AVL_TREE
@@ -35,9 +40,8 @@ public:
     void travel();
     void insert(ElementType e);
     void remove(ElementType e);
-
-    AVLNode* root;
 private:
+    AVLNode* root;
     void makeEmpty(AVLNode* T);
     void setHeight();
     AVLNode* setHeight(AVLNode* T);
