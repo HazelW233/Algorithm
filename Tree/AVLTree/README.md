@@ -6,4 +6,8 @@
 &emsp;&emsp;AVL树的是通过在插入或删除节点后，找到那个最低的左右子树高度相差2的节点，通过旋转AVL树来，来达到左右子树高度相差小于等于1，这个过程通过*旋转*来实现。
 
 ## 旋转
-
+&emsp;&emsp;旋转可以分为以下图片的四种情况，通过四个函数处理。
+- singleRotateLeft();
+- singleRotateRight();
+- doubleRotateLeft();
+-doubleRotateRight();
