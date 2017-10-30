@@ -126,6 +126,20 @@ void BSTree::insert(ElementType e){
 
 //将element为e的节点从树中删除
 void BSTree::remove(ElementType e){
+    if(root->element==e){
+        if(root->lchild==NULL || root->rchild==NULL){
+            BSTNode* temp_node = root;
+            if(root->lchild==NULL && root->rchild==NULL){
+                root = NULL;
+            }else if(root->lchild==NULL){
+                root = root->rchild;
+            }else{
+                root = root->lchild;
+            }
+            delete temp_node;
+            return;
+        }
+    }
     BSTNode* node = root;
     BSTNode* parent = NULL;
     //找到该节点
