@@ -7,10 +7,10 @@
 
 ## 旋转
 &emsp;&emsp;旋转可以分为以下图片的四种情况，通过四个函数处理。
-- singleRotateLeft();
-- singleRotateRight();
-- doubleRotateLeft();
-- doubleRotateRight();
+- AVLNode* singleRotateLeft(AVLNode* T);
+- AVLNode* singleRotateRight(AVLNode* T);
+- AVLNode* doubleRotateLeft(AVLNode* T);
+- AVLNode* doubleRotateRight(AVLNode* T);
 
-![image](https://github.com/HazelW233/Algorithm/Tree/AVLTree/single.png)
-![image](https://github.com/HazwlW233/Algorithm/Tree/AVLTree/double.png )
+![alt](https://github.com/HazelW233/Algorithm/Tree/AVLTree/single.png)
+![alt](https://github.com/HazwlW233/Algorithm/Tree/AVLTree/double.png )
