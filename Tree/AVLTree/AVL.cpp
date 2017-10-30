@@ -176,6 +176,7 @@ void AVLTree::remove(ElementType e){
                 root = root->lchild;
             }
             delete temp_node;
+            setHeight();
             return;
         }
     }
