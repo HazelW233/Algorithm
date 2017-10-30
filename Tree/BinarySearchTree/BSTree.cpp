@@ -127,6 +127,7 @@ void BSTree::insert(ElementType e){
 //将element为e的节点从树中删除
 void BSTree::remove(ElementType e){
     if(root->element==e){
+        //如果要删除的节点为根节点，且根节点child个数小于等于1
         if(root->lchild==NULL || root->rchild==NULL){
             BSTNode* temp_node = root;
             if(root->lchild==NULL && root->rchild==NULL){
