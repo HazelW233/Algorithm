@@ -12,5 +12,5 @@
 - doubleRotateLeft();
 - doubleRotateRight();
 
-![image](Algorithm/Tree/AVLTree/single.png)
-![image](Algorithm/Tree/AVLTree/double.png )
+![image](https://github.com/HazelW233/Algorithm/Tree/AVLTree/single.png)
+![image](https://github.com/HazwlW233/Algorithm/Tree/AVLTree/double.png )
