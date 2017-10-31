@@ -8,3 +8,4 @@
 >Tree
 >>Huffman Tree<br>
 >>Binary Search Tree<br>
+>>AVL Tree<br>
